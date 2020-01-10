@@ -1,0 +1,123 @@
+.page-coupon {
+  width: 1260px;
+  display: block;
+  min-height: 500px;
+  content: ".";
+  clear: both;
+  margin: 10px auto;
+
+  .coupon {
+
+    width: 378px;
+    overflow: visible;
+    position: relative;
+    float: left;
+    margin: 0 25px 20px 0;
+    height: 145px;
+    border: 1px solid #f2f2f2;
+    background: #fff;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .04);
+    display: inline-block;
+
+    .img {
+
+      .product-img {
+        float: left;
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    .type {
+      position: relative;
+      float: left;
+      z-index: 2;
+      width: 155px;
+      height: 120px;
+      padding: 10px 0 15px;
+      color: #333;
+      outline: 0;
+
+      .price {
+        color: #ff0006;
+
+        em {
+          display: inline-block;
+          font: 400 18px arial;
+          vertical-align: top;
+          margin: 3px 3px 0 0;
+        }
+
+        strong {
+          display: inline-block;
+          font: 400 34px arial;
+          vertical-align: top;
+        }
+
+        span {
+          display: inline-block;
+          font-size: 12px;
+          margin: 12px 0 0 10px;
+          vertical-align: top;
+        }
+      }
+
+      .range {
+        height: 36px;
+        line-height: 18px;
+        overflow: hidden;
+        font-size: 12px;
+        font-weight: 700;
+        margin: 0 0 15px;
+        cursor: default;
+      }
+    }
+
+    .get {
+      position: absolute;
+      display: block;
+      width: 52px;
+      height: 100%;
+      line-height: 22px;
+      text-align: center;
+      font-size: 14px;
+      background: #ff2215;
+      right: 0;
+
+      .txt {
+        position: relative;
+        display: block;
+        top: 25px;
+        width: 20px;
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+      }
+
+    }
+
+    .get-disable {
+      background: #eee;
+    }
+
+    .get-after {
+      width: 66px;
+      height: 66px;
+      right: 62px;
+      bottom: 10px;
+      padding: 0;
+      background: url(//misc.360buyimg.com/user/quan/3.0.0/widget/quan-index/i/geted.png) no-repeat;
+      overflow: hidden;
+      line-height: 26px;
+      border-radius: 0 13px 13px 0;
+      font-size: 14px;
+      color: #fff;
+      position: absolute;
+      z-index: 2;
+      display: block;
+    }
+  }
+}

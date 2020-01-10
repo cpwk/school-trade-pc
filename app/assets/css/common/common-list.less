@@ -1,0 +1,229 @@
+@import "../color";
+
+.common-list {
+
+  .overall {
+
+    .ant-card-bordered {
+      border: none;
+      margin-bottom: 20px;
+    }
+
+    .ant-card-body {
+      background: @bg-grey;
+    }
+
+    .stat {
+      width: 100%;
+      height: 70px;
+      display: -webkit-flex;
+      -webkit-flex-flow: row;
+
+      li {
+        -webkit-flex: 1;
+        border-right: 1px solid #dfdfdf;
+
+        p {
+          width: 100%;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          font-size: 35px;
+          margin: 0;
+        }
+
+        span {
+          display: block;
+          width: 100%;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+        }
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+
+    .thin {
+      width: 100%;
+      display: -webkit-flex;
+
+      span {
+        -webkit-flex: 1;
+        display: block;
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        text-align: left;
+
+        b {
+          font-size: 20px;
+        }
+      }
+
+      .btn {
+        -webkit-flex: 0 0 100px;
+        margin-left: 30px;
+        background: @primary-color;
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 6px;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .sub-title {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+  }
+
+  .poster {
+    position: relative;
+    width: 125px;
+    height: 70px;
+
+    .img {
+      position: absolute;
+      width: 125px;
+      height: 70px;
+    }
+
+    .icon {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      right: 5px;
+      bottom: 5px;
+    }
+  }
+
+  .banner-img, .article-img, .custcase-img, .product-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+  .simgs {
+    img {
+      float: left;
+      width: 40px;
+      height: 40px;
+      margin: 0 3px;
+      cursor: pointer;
+    }
+  }
+
+  .state {
+    position: relative;
+
+    .warning {
+      color: #f89406;
+      cursor: pointer;
+    }
+
+    .pass {
+      color: #39ff00;
+    }
+
+    .nopass {
+      color: #ff2700;
+    }
+
+
+    .disabled {
+      color: #a0a0a0;
+    }
+
+    .important {
+      color: #87d068;
+    }
+
+    .primary {
+      color: #428bca;
+      background: none;
+    }
+
+    .twinkle {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin-right: 3px;
+      border-radius: 100%;
+      background: @red;
+      animation: twinkling 2s infinite ease-in-out;
+    }
+
+    @keyframes twinkling {
+      0% {
+        opacity: 0.4;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0.4;
+      }
+    }
+
+  }
+
+  .disabled-bg {
+    color: @font-light;
+  }
+
+}
+
+.modal-scroll-500 {
+  height: 500px;
+
+  .inner {
+    height: 500px;
+    overflow: scroll;
+    width: 100%;
+
+    .state {
+      .warning {
+        color: #f89406;
+      }
+
+      .important {
+        color: #ff0000;
+      }
+    }
+  }
+}
+
+.label {
+  flex: 0 0 80px;
+  position: relative;
+  display: inline-block;
+  text-align: justify;
+  text-align-last: justify;
+  padding-right: 20px;
+
+  &:after {
+    content: ' :';
+    position: absolute;
+    right: -4px;
+  }
+}
+
+.img-edit-card {
+  float: left;
+  width: 140px;
+  margin-right: 10px;
+
+  .ant-card-body {
+    padding: 0;
+  }
+}

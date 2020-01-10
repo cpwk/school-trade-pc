@@ -1,0 +1,137 @@
+.ant-modal-content {
+  min-width: 570px;
+
+  .card-container {
+    .mobile {
+      text-align: center;
+      margin-bottom: 24px;
+      font-size: 20px;
+      font-weight: 500;
+      color: #979797;
+    }
+
+    .member-top {
+      width: 100%;
+
+      .usermeber-ul {
+        overflow-x: auto;
+        width: auto;
+        white-space: nowrap;
+
+        &::-webkit-scrollbar {
+          width: 0;
+          height: 0;
+        }
+
+        .usermeber-li {
+          display: inline-block;
+          width: 146px;
+          height: 186px;
+          margin-bottom: 10px;
+          border: 2px solid #f0f0f0;
+          border-radius: 6px;
+          margin-left: 20px;
+          text-align: center;
+          cursor: pointer;
+          overflow: scroll;
+
+          .member-type {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #222;
+            margin-top: 18px;
+            font-weight: 400;
+          }
+
+          .member-price {
+            font-family: Arial, sans-serif;
+            color: #dfb349;
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 3px;
+
+            .emmm {
+              font-weight: normal;
+              font-size: 15px;
+            }
+
+            .price {
+              font-size: 36px;
+            }
+
+            .desc {
+              font-size: 16px;
+              color: #979797;
+              line-height: 24px;
+              padding: 0 10px;
+
+            }
+          }
+        }
+
+        .current {
+          background-color: #fcf7e6;
+          border-color: #ebc96a;
+        }
+      }
+    }
+
+
+  }
+
+  .mod-pay {
+    width: 480px;
+    min-height: 100px;
+    margin: auto;
+    border: 2px solid #f0f0f0;
+    border-radius: 12px;
+    position: relative;
+
+    .wx-play {
+      position: absolute;
+      width: 23px;
+      height: 20px;
+      top: 10px;
+      left: 10px;
+      background: url("../../image/vip/code.png") 0 20px;
+    }
+
+    .txt {
+      position: absolute;
+      left: 35px;
+      top: 8px;
+    }
+
+    .wx-code {
+      display: inline-block;
+      float: left;
+      width: 100px;
+      height: 100px;
+      background: url('../../image/vip/weixin.jpg') center no-repeat;
+      background-size: cover;
+      margin-left: 99px;
+    }
+
+    .wx {
+      line-height: 90px;
+
+      .play {
+        font-weight: 700;
+        font-size: 36px;
+        color: #f1bd41;
+        margin: 0 5px;
+
+      }
+    }
+
+  }
+
+  .member-btn {
+    margin: auto;
+    display: block;
+  }
+
+  .ant-modal-footer {
+    display: none !important;
+  }
+}

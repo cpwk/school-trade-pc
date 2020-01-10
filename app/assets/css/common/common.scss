@@ -1,0 +1,82 @@
+@import "/color";
+
+body {
+  font-family: "微软雅黑", "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-size: 13px;
+  width: 100%;
+  min-width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  font-weight: 200;
+  color: $font-default !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* common */
+ul, p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0 none;
+}
+
+
+ol, ul, li {
+  list-style: none;
+}
+
+a, button, input, li, label {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+}
+
+img, input {
+  border: none;
+}
+
+textarea {
+  resize: none
+}
+
+a:focus, input:focus, img:focus, button:focus, textarea:focus, select:focus, li:focus, label:focus {
+  outline: none;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.clearfix-h20 {
+  clear: both;
+  height: 20px;
+}
+
+.prism-player {
+  background-color: transparent !important;
+}
+
+@font-face {
+  font-family: '963-CAI978';
+  src: url('../../fonts/963-CAI978.eot');
+  src: url('../../fonts/963-CAI978.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/963-CAI978.woff') format('woff'),
+  url('../../fonts/963-CAI978.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: '829-CAI978';
+  src: url('../../fonts/829-CAI978.eot');
+  src: url('../../fonts/829-CAI978.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/829-CAI978.woff') format('woff'),
+  url('../../fonts/829-CAI978.ttf') format('truetype');
+}

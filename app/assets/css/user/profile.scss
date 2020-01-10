@@ -1,0 +1,25 @@
+.profile-page {
+  .profile {
+    display: flex;
+    flex-flow: row;
+
+    .avatar {
+      flex: 0 0 150px;
+      width: 200px;
+      height: 200px;
+    }
+
+    .info {
+      flex: 1;
+      margin-left: 20px;
+
+      li {
+        float: left;
+        width: 50%;
+        line-height: 40px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+}
