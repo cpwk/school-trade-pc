@@ -1,10 +1,10 @@
 import React from 'react';
-import UserProfile from "./UserProfile";
-import {U} from "../../common";
-import {Descriptions, Icon, Tag} from "antd";
-import UserUtils from "./UserUtils";
-import "../../assets/css/user/user.scss"
-import App from "../../common/App";
+import UserProfile from './UserProfile';
+import {U} from '../../common';
+import {Descriptions, Icon, Tag} from 'antd';
+import UserUtils from './UserUtils';
+import '../../assets/css/user/user.scss';
+import App from '../../common/App';
 
 export default class User extends React.Component {
 
@@ -49,14 +49,14 @@ export default class User extends React.Component {
             }}>开通会员</Tag>];
         }
 
-        let {img, nick, mobile, email, createdAt, balance} = user;
+        let {avatar, nick, mobile, email, createdAt, balance} = user;
 
         return <Descriptions title="资料展示" bordered span={4}>
 
             <Descriptions.Item label="头像" span={2}>
 
-                <img key={img} src={img + '@!120-120'} onClick={() => {
-                    UserUtils.modUserPro()
+                <img key={avatar} src={avatar + '@!120-120'} onClick={() => {
+                    UserUtils.modUserPro();
                 }}/>
                 {tag}
             </Descriptions.Item>

@@ -1,18 +1,18 @@
-import React from 'react'
-import {Avatar, Badge, Carousel, Icon} from 'antd'
-import {App, CTYPE} from "../../common";
-import UserProfile from '../user/UserProfile'
-import {inject, observer} from 'mobx-react'
+import React from 'react';
+import {Avatar, Badge, Carousel, Icon} from 'antd';
+import {App, CTYPE} from '../../common';
+import UserProfile from '../user/UserProfile';
+import {inject, observer} from 'mobx-react';
 import NavLink from '../../common/NavLink.jsx';
-import '../../assets/css/comps/comps.scss'
+import '../../assets/css/comps/comps.scss';
 
 const menus = [
     {cn: '挑选宝贝', en: 'HOME', path: '/'},
     {cn: '领券中心', en: 'COUPON', path: '/coupon'},
-    {cn: '发布闲置', en: 'PRODUCT', path: `/user/sell-product-edit/${0}`},
+    {cn: '发布闲置', en: 'PRODUCT', path: `/user/sell-product-edit/${0}`}
 ];
 
-@inject("carts")
+@inject('carts')
 @observer
 class Header extends React.Component {
 
@@ -32,6 +32,7 @@ class Header extends React.Component {
     render() {
         let {profile = {}} = this.state;
         let {user = {}} = profile;
+        let {avatar} = user;
         let count = this.props.carts.getCount || 0;
 
         return <div className="top-header">
@@ -43,7 +44,7 @@ class Header extends React.Component {
 
                 {!user.id && <div className='btn' onClick={() => App.go('/signin')}>登录</div>}
                 {user.id && <div className='btn' onClick={() => App.go('/user/profile')}>
-                    <Avatar size={50} src={user.img}/>
+                    <Avatar size={50} src={avatar}/>
                 </div>}
                 <div className='shopping' onClick={() => {
                     App.go(`/car`)
